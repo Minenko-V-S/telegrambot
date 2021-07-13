@@ -10,7 +10,7 @@ import static com.github.javarushcommunity.jrtb.command.StartCommand.START_MESSA
 
 @DisplayName("Unit-level testing for StartCommand")
 public class StartCommandTest extends AbstractCommandTest{
-    private TelegramUserService telegramUserService;
+
 
     @Override
     String getCommandName() {

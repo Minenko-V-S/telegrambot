@@ -8,7 +8,6 @@ import static com.github.javarushcommunity.jrtb.command.CommandName.STAT;
 import static com.github.javarushcommunity.jrtb.command.StatCommand.STAT_MESSAGE;
 
 public class StatCommandTest extends AbstractCommandTest{
-    private TelegramUserService telegramUserService;
 
     @Override
     String getCommandName() {

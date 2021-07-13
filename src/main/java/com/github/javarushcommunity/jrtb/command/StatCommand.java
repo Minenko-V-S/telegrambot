@@ -5,7 +5,10 @@ import com.github.javarushcommunity.jrtb.service.TelegramUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
-public class StatCommand implements Command{
+/**
+ * Statistics {@link Command}.
+ */
+public class StatCommand implements Command {
 
     private final TelegramUserService telegramUserService;
     private final SendBotMessageService sendBotMessageService;
@@ -24,3 +27,4 @@ public class StatCommand implements Command{
         sendBotMessageService.sendMessage(update.getMessage().getChatId().toString(), String.format(STAT_MESSAGE, activeUserCount));
     }
 }
+

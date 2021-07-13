@@ -17,6 +17,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
  */
 abstract class AbstractCommandTest {
 
+    protected TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
     protected JavarushTelegramBot javarushBot = Mockito.mock(JavarushTelegramBot.class);
     protected SendBotMessageService sendBotMessageService = new SendBotMessageServiceImpl(javarushBot);
 
@@ -29,7 +30,7 @@ abstract class AbstractCommandTest {
     @Test
     public void shouldProperlyExecuteCommand() throws TelegramApiException {
 
-        TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
+
         //given
         Long chatId = 1234567824356L;
 

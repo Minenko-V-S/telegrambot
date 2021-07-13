@@ -1,6 +1,7 @@
 package com.github.javarushcommunity.jrtb.service;
 
-import com.github.javarushcommunity.jrtb.repository.TelegramUser;
+
+import com.github.javarushcommunity.jrtb.repository.entity.TelegramUser;
 import com.github.javarushcommunity.jrtb.repository.TelegramUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import java.util.Optional;
  * Implementation of {@link TelegramUserService}.
  */
 @Service
-public class TelegramUserServiceImpl implements TelegramUserService{
+public class TelegramUserServiceImpl implements TelegramUserService {
 
     private final TelegramUserRepository telegramUserRepository;
 

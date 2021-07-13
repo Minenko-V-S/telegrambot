@@ -11,8 +11,6 @@ import static com.github.javarushcommunity.jrtb.command.StopCommand.STOP_MESSAGE
 @DisplayName("Unit-level testing for StopCommand")
 public class StopCommandTest extends AbstractCommandTest {
 
-    private TelegramUserService telegramUserService;
-
     @Override
     String getCommandName() {
         return STOP.getCommandName();

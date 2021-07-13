@@ -1,4 +1,4 @@
-package com.github.javarushcommunity.jrtb.repository;
+package com.github.javarushcommunity.jrtb.repository.entity;
 
 import lombok.Data;
 
