@@ -2,6 +2,7 @@ package command;
 
 import com.github.javarushcommunity.jrtb.command.Command;
 import com.github.javarushcommunity.jrtb.command.StopCommand;
+import com.github.javarushcommunity.jrtb.service.TelegramUserService;
 import org.junit.jupiter.api.DisplayName;
 
 import static com.github.javarushcommunity.jrtb.command.CommandName.STOP;
@@ -22,6 +23,6 @@ public class StopCommandTest extends AbstractCommandTest {
 
     @Override
     Command getCommand() {
-        return new StopCommand(sendBotMessageService);
+        return new StopCommand(sendBotMessageService, telegramUserService);
     }
 }
