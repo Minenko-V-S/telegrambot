@@ -4,6 +4,7 @@ import com.github.javarushcommunity.jrtb.bot.JavarushTelegramBot;
 import com.github.javarushcommunity.jrtb.command.Command;
 import com.github.javarushcommunity.jrtb.service.SendBotMessageService;
 import com.github.javarushcommunity.jrtb.service.SendBotMessageServiceImpl;
+import com.github.javarushcommunity.jrtb.service.TelegramUserService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -27,6 +28,8 @@ abstract class AbstractCommandTest {
 
     @Test
     public void shouldProperlyExecuteCommand() throws TelegramApiException {
+
+        TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
         //given
         Long chatId = 1234567824356L;
 
