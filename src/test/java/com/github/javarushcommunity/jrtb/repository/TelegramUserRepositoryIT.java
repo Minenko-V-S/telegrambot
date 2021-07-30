@@ -21,7 +21,7 @@ import static org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTest
  */
 @ActiveProfiles("test")
 @DataJpaTest
-@AutoConfigureTestDatabase
+@AutoConfigureTestDatabase(replace = NONE)
 public class TelegramUserRepositoryIT {
 
     @Autowired

@@ -13,6 +13,7 @@ import org.springframework.test.context.jdbc.Sql;
 import java.util.List;
 import java.util.Optional;
 
+import static org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace.NONE;
 
 
 /**
@@ -20,7 +21,7 @@ import java.util.Optional;
  */
 @ActiveProfiles("test")
 @DataJpaTest
-@AutoConfigureTestDatabase
+@AutoConfigureTestDatabase(replace = NONE)
 public class GroupSubRepositoryIT {
 
     @Autowired
