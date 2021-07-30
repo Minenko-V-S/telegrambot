@@ -1,13 +1,9 @@
-package command;
-
-import com.github.javarushcommunity.jrtb.command.Command;
-import com.github.javarushcommunity.jrtb.command.StatCommand;
-import com.github.javarushcommunity.jrtb.service.TelegramUserService;
+package com.github.javarushcommunity.jrtb.command;
 
 import static com.github.javarushcommunity.jrtb.command.CommandName.STAT;
 import static com.github.javarushcommunity.jrtb.command.StatCommand.STAT_MESSAGE;
 
-public class StatCommandTest extends AbstractCommandTest{
+public class StatCommandTest extends AbstractCommandTest {
 
     @Override
     String getCommandName() {

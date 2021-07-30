@@ -1,5 +1,6 @@
 package com.github.javarushcommunity.jrtb.command;
 
+import com.github.javarushcommunity.jrtb.command.Command;
 import com.github.javarushcommunity.jrtb.service.SendBotMessageService;
 import com.github.javarushcommunity.jrtb.service.TelegramUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class StatCommand implements Command {
     @Override
     public void execute(Update update) {
         int activeUserCount = telegramUserService.retrieveAllActiveUsers().size();
-        sendBotMessageService.sendMessage(update.getMessage().getChatId().toString(), String.format(STAT_MESSAGE, activeUserCount));
+        sendBotMessageService.sendMessage(Long.valueOf(update.getMessage().getChatId().toString()), String.format(STAT_MESSAGE, activeUserCount));
     }
 }
 

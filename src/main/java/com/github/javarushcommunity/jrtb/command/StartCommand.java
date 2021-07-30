@@ -1,5 +1,6 @@
 package com.github.javarushcommunity.jrtb.command;
 
+import com.github.javarushcommunity.jrtb.command.Command;
 import com.github.javarushcommunity.jrtb.repository.entity.TelegramUser;
 import com.github.javarushcommunity.jrtb.service.SendBotMessageService;
 import com.github.javarushcommunity.jrtb.service.TelegramUserService;
@@ -23,7 +24,7 @@ public class StartCommand implements Command {
 
     @Override
     public void execute(Update update) {
-        String chatId = update.getMessage().getChatId().toString();
+        Long chatId = Long.valueOf(update.getMessage().getChatId().toString());
 
         telegramUserService.findByChatId(chatId).ifPresentOrElse(
                 user -> {
