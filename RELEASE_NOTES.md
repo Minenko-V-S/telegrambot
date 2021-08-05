@@ -24,6 +24,10 @@
 * JRTB-6: added ability to get a list of group subscriptions.
 
 
+## 0.6.0-SNAPSHOT
+
+*   JRTB-7: added the ability to delete group subscription.
+
 ## 0.7.0-SNAPSHOT
 
 *   JRTB-4: added ability to send notifications about new articles
