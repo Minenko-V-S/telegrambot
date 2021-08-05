@@ -1,7 +1,5 @@
 package com.github.javarushcommunity.jrtb.command;
 
-import com.github.javarushcommunity.jrtb.command.Command;
-
 /**
  * Enumeration for {@link Command}'s.
  */
@@ -11,6 +9,7 @@ public enum CommandName {
     STOP("/stop"),
     HELP("/help"),
     STAT("/stat"),
+    DELETE_GROUP_SUB("/deletegroupsub"),
     ADD_GROUP_SUB("/addgroupsub"),
     LIST_GROUP_SUB("/listgroupsub"),
     NO("/no");
