@@ -45,7 +45,7 @@ class DeleteGroupSubCommandTest {
         Mockito.when(telegramUserService.findByChatId(chatId))
                 .thenReturn(Optional.of(new TelegramUser()));
 
-        String expectedMessage = "Пока нет подписок на группы. Чтобы добавить подписку напиши /addGroupSub";
+        String expectedMessage = "Пока нет подписок на группы. Чтобы добавить подписку напиши /addgroupsub";
 
         //when
         command.execute(update);
