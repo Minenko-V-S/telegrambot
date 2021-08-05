@@ -20,5 +20,12 @@
 
 ## 0.5.0-SNAPSHOT
 
-*   JRTB-5: added ability to subscribe on group
-*   JRTB-6: added ability to get a list of group subscriptions.
+* JRTB-5: added ability to subscribe on group
+* JRTB-6: added ability to get a list of group subscriptions.
+
+
+## 0.7.0-SNAPSHOT
+
+*   JRTB-4: added ability to send notifications about new articles
+*   JRTB-8: added ability to set inactive telegram user
+*   JRTB-9: added ability to set active user and/or start using it.

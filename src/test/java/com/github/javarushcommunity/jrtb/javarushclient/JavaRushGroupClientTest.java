@@ -15,6 +15,8 @@ import static com.github.javarushcommunity.jrtb.javarushclient.dto.GroupInfoType
 @DisplayName("Integration-level testing for JavaRushGroupClientImplTest")
 class JavaRushGroupClientTest {
 
+    public static final String JAVARUSH_API_PATH = "https://javarush.ru/api/1.0/rest";
+
     private final JavaRushGroupClient groupClient = new JavaRushGroupClientImpl("https://javarush.ru/api/1.0/rest");
 
     @Test
