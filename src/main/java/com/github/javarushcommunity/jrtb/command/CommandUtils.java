@@ -14,7 +14,7 @@ public class CommandUtils {
      * @return chatID from the provided {@link Update} object.
      */
     public static Long getChatId(Update update) {
-        return Long.valueOf(String.valueOf(update.getMessage().getChatId()));
+        return update.getMessage().getChatId();
     }
 
     /**
